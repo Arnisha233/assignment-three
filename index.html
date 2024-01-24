@@ -26,7 +26,7 @@
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                   <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn lg:hidden">
+                    <div tabindex="0" role="button" class="lg:hidden mr-4">
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </div>
                     <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
@@ -39,12 +39,12 @@
                         </div>
                     </ul>
                   </div>
-                  <a class="btn lg:text-4xl text-2xl text-[#131318] font-extrabold">Hockey’s</a>
+                  <a class="lg:text-4xl text-2xl text-[#131318] font-extrabold">Hockey<span class="text-[#FF4240]">’</span>s</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-1">
                     <div class="py-3 flex justify-center items-center gap-11 text-base text[#424247] font-normal">
-                        <a href="">Home</a>
+                        <a class="text-[#FF4240] font-bold text-base" href="">Home</a>
                       <a href="">About</a>
                       <a href="">Pages</a>
                       <a href="">Blog</a>
@@ -57,9 +57,9 @@
                   </ul>
                 </div>
                 <div class="navbar-end space-x-6">
-                    <img class="hidden lg:flex" src="Images/Frame (6).svg" alt="">
-                <button class="btn btn-secondary bg-[#FF4240] border-none lg:px-6 lg:py-4 px-4 py-2 text-white 
-                rounded-lg">Get Ticket</button>
+                    <a href=""><img class="hidden lg:flex" src="Images/Frame (6).svg" alt=""></a>
+                <button class="btn btn-secondary bg-[#FF4240] border-none text-white 
+                rounded-lg text-base">Get Ticket</button>
                   
                 </div>
               </div>
@@ -70,12 +70,16 @@
         <div class="container mx-auto lg:px-24 px-8 mt-12">
             <div class="carousel w-full">
                 <div id="slide1" class="carousel-item relative w-full bg-[url('./Images/1.png')] rounded-2xl bg-no-repeat bg-center">
+                    <div class="absolute right-10 bottom-6 bg-[#131318] w-[400px] p-5 rounded-2xl ">
+                        <h2 class="text-white text-xl font-extrabold">Meet all the heroes from the field</h2>
+                        <p class="w-[350px] text-[#ffffff99] text-base font-medium">Tennis legend with numerous Grand Slam titles, known for her athletic prowess and dedication to breaking barriers in the sport.</p>
+                    </div>
                   <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide4" class="btn btn-circle">❮</a> 
                     <a href="#slide2" class="btn btn-circle">❯</a>
                   </div>
                 </div> 
-                <div id="slide2" class="carousel-item relative w-full bg-[url('./Images/1.png')] rounded-2xl bg-no-repeat bg-center">
+                <div id="slide2" class="carousel-item relative w-full bg-[url('./Images/hockey.webp')] rounded-2xl bg-no-repeat bg-center">
                   <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide1" class="btn btn-circle">❮</a> 
                     <a href="#slide3" class="btn btn-circle">❯</a>
@@ -144,8 +148,6 @@
                 </div>
 
             </div>
-
-
         </div>
         </section>
         <!-- program section start-->
@@ -154,17 +156,17 @@
             <div class="">
                 <hr>
                 <h2 class="text-[#131318] lg:text-4xl text-xl font-extrabold text-center lg:pt-8 pt-6">Program Sections</h2>
-            <p class="text-sm lg:text-base font-medium w-2/3 text-center mx-auto lg:pt-6
+            <p class="text-sm lg:text-base text-[#13131899] font-medium w-2/3 text-center mx-auto lg:pt-6
             pt-4 pb-6">The initiation phase serves as the gateway, where beginners embark on a journey of discovery</p>
             <hr>
             </div>
             <div class="pt-12 gap-6 grid grid-cols-1 lg:grid-cols-2">
                 <div class="grid col-span-1">
-                    <div class="bg-[linear-gradient(rgba(19,19,24,0.50),rgba(19,19,19,0.50)),url('./Images/2.png')] rounded-2xl bg-no-repeat">
+                    <div class="bg-[linear-gradient(rgba(19,19,24,0.50),rgba(19,19,19,0.50)),url('./Images/2.png')] rounded-2xl">
                         <div class="lg:pt-12 pt-5 px-10 py-6">
                             <h2 class="text-white lg:text-[28px] text-[20px]">Junior Program</h2>
-                        <p class="text-white text-base font-medium py-4">Our Junior Program is more than just an introduction to the world of possibilities; it's a playground of dreams where young minds embark on a journey of discovery,</p>
-                            <button class="btn px-5 py-2 bg-[#FF4240] rounded-e-sm border-none text-white text-xl lg:pb-10">Register Now!</button>
+                        <p class="text-white text-base font-medium py-3">Our Junior Program is more than just an introduction to the world of possibilities; it's a playground of dreams where young</p>
+                            <button class="btn rounded-lg px-5 py-2 bg-[#FF4240]  border-none text-white lg:text-xl lg:pb-10">Register Now!</button>
                         </div>
                     </div>
                 </div>
@@ -174,19 +176,19 @@
                     <div class="bg-[linear-gradient(rgba(19,19,24,0.50),rgba(19,19,19,0.50)),url('./Images/3.png')] rounded-2xl bg-no-repeat">
                         <div class="lg:pt-12 pt-5 px-10 py-6">
                             <h2 class="text-white lg:text-[28px] text-[20px]">Teenager Program</h2>
-                        <p class="text-white text-base font-medium py-4">In this crucial phase of life, our focus extends beyond the specific discipline, whether it be sports, academics, </p>
-                            <button class="btn px-5 py-2 bg-[#FF4240] rounded-e-sm border-none text-white text-xl lg:pb-10">Register Now!</button>
+                        <p class="text-white text-base font-medium py-3">In this crucial phase of life, our focus extends beyond the specific discipline, whether it be sports, academics, </p>
+                            <button class="btn rounded-lg px-5 py-2 bg-[#FF4240] border-none text-white lg:text-xl lg:pb-10">Register Now!</button>
                         </div>
                     </div>
                 </div>
 
 
                 <div class="lg:grid col-span-full">
-                    <div class="bg-[linear-gradient(rgba(19,19,24,0.50),rgba(19,19,19,0.50)),url('./Images/4.png')] rounded-2xl bg-no-repeat lg:h-[400px]">
-                        <div class="lg:pt-12 pt-5 px-10 py-6 lg:translate-y-24">
+                    <div class="bg-[linear-gradient(rgba(19,19,24,0.50),rgba(19,19,19,0.50)),url('./Images/4.png')] rounded-2xl bg-no-repeat lg:h-[450px]">
+                        <div class="px-10 py-6 lg:translate-y-52">
                             <h2 class="text-white lg:text-[28px] text-[20px]">Professional Program</h2>
-                        <p class="text-white text-base font-medium py-4 ;g:w-[500px]">In the heart of our Professional Program, participants encounter a dynamic fusion of advanced training, strategic mentorship</p>
-                            <button class="btn px-5 py-2 bg-[#FF4240] rounded-e-sm border-none text-white text-xl lg:pb-10">Register Now!</button>
+                        <p class="text-white text-base font-medium py-4 lg:w-[500px]">In the heart of our Professional Program, participants encounter a dynamic fusion of advanced training, strategic mentorship</p>
+                            <button class="btn rounded-lg px-5 py-2 bg-[#FF4240] border-none text-white lg:text-xl lg:pb-10">Register Now!</button>
                         </div>
                     </div>
                 </div>
@@ -199,7 +201,7 @@
             <div class="container mx-auto lg:px-24 px-8">
                 <hr>
                 <h2 class="text-[#131318] lg:text-4xl text-xl font-extrabold text-center lg:pt-8 pt-6">Our New Products</h2>
-            <p class="text-sm lg:text-base font-medium w-2/3 text-center mx-auto lg:pt-6
+            <p class="text-sm lg:text-base text-[#13131899] font-medium w-2/3 text-center mx-auto lg:pt-6
             pt-4 pb-6">Whether you're a tech enthusiast, a fashion connoisseur, or someone seeking the perfect blend of performance and style</p>
             <hr>
 
@@ -306,15 +308,7 @@
 
             3 nuber cart ta aeykahe send korbp
 
-
-
-
-
-
            </div>
-
-
-
 
             </div>
         </section>
@@ -323,10 +317,11 @@
         <div class="container mx-auto lg:px-24 px-8">
             <hr>
                 <h2 class="text-[#131318] lg:text-4xl text-xl font-extrabold text-center lg:pt-8 pt-6">Clients Question</h2>
-            <p class="text-sm lg:text-base font-medium w-2/3 text-center mx-auto lg:pt-6
+            <p class="text-sm lg:text-base text-[#13131899] font-medium w-2/3 text-center mx-auto lg:pt-6
             pt-4 pb-6">If you have a specific question about clients or customer relations, please provide more details so that I can tailor a short line accordingly. </p>
             <hr>
-            <div class="grid gap-6 grid-cols-1 lg:grid-cols-3 border-solid border-2 border-gray-100 p-8 rounded-2xl pt-12">
+            <div class="pt-12">
+            <div class="grid gap-6 grid-cols-1 lg:grid-cols-3 border-solid border-2 border-gray-100 p-6 rounded-2xl">
                 <div class="col-span-1">
                     <img class="w-full h-full" src="./Images/11.png" alt="">
                 </div>
@@ -388,6 +383,7 @@
                 </div>
             </div>
         </div>
+        </div>
     </section>
         <!-- get in touch section start -->
         <section class="mt-24">
@@ -397,9 +393,9 @@
             <p class="text-sm lg:text-base font-medium w-2/3 text-center mx-auto lg:pt-6
             pt-4 pb-6 text-[#13131899]">We love hearing from you! Whether it's inquiries, collaborations, or just a friendly hello, feel free to get in touch.</p>
             <hr>
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-9">
-                    <div class="border-solid border-2 border-gray-100 px-5 py-5">
-                        <div class="bg-[#BCED6D1A] pt-5 pl-5 mb-5 rounded-2xl">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-10">
+                    <div class="border-solid border-2 border-gray-100 p-5 rounded-2xl">
+                        <div class="bg-[#BCED6D1A] pt-5 pl-5 mb-5 rounded-2xl bg-red-400">
                             <div class="w-30 h-40">
                                 <div class="">
                                 <img class="w-10 h-10" src="Images/Group 1171275317.png" alt="">
@@ -463,7 +459,7 @@
                     </div>
                     <div class="mt-4">
                         <label for="" class="text-[#131318] text-base font-bold">Message</label>
-                        <textarea class="w-full mt-2 textarea textarea-bordered bg-[#13131805] rounded-xl" placeholder="Bio" rows="5">Write your message</textarea>
+                        <textarea class="w-full mt-2 textarea textarea-bordered bg-[#13131805] rounded-xl" placeholder="Write your message" rows="5"></textarea>
                     </div>
                     <button class="btn w-full bg-[#FF4240] m-7 text-white rounded-xl mx-auto">Send Message</button>
                 </div>
@@ -492,8 +488,8 @@
     <div>
         <footer class="footer p-10 bg-[#131318] text-base-content">
             <aside class="flex flex-col justify-center">
-                
-                    <h2 class="text-2xl lg:text-[28px] text-white font-extrabold">Get In Touch</h2>
+                    
+                    <h2 class="text-center text-xl lg:text-[25px] text-white font-extrabold">Get In Touch</h2>
               <p class="w-[300px] mt-2 text-[#FFFFFF99] text-base font-medium">Dit amet consectetur. Condimentum adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
               <div class="flex gap-4 text-[#FFFFFFCC] text-base font-medium">
                 <i class="text-[#FF4240] fa-solid fa-envelope"></i>
@@ -504,29 +500,29 @@
                     <i class="text-[#FF4240] fa-solid fa-phone"></i>
                     <p>(+62) 123-321-543</p>
                 </div>
-                
-              
-              
-            </aside>
             
-            <nav>
-                <header class="footer-title text-[18px] text-white font-bold">Company</header> 
-                <a class="link link-hover text-[#FFFFFF99] text-base font-medium">About us</a>
-                <a class="link link-hover text-[#FFFFFF99] text-base font-medium">Leadership</a>
-                <a class="link link-hover text-[#FFFFFF99] text-base font-medium">Careers</a>
-                <a class="link link-hover text-[#FFFFFF99] text-base font-medium">News & Article</a>
-                <a class="link link-hover text-[#FFFFFF99] text-base font-medium">Legal Notice</a>
+            
+            </aside>
+            <div class="grid lg:gap-20 lg:grid-cols-2 grid-cols-2 gap-10">
+            <nav class="grid grid-cols-1">
+                <header class="footer-title text-[18px] text-white font-bold">Company</header>
+                <a class="py-1 link link-hover text-[#FFFFFF99] text-base font-medium">About us</a>
+                <a class="py-1 link link-hover text-[#FFFFFF99] text-base font-medium">Leadership</a>
+                <a class="py-1 link link-hover text-[#FFFFFF99] text-base font-medium">Careers</a>
+                <a class="py-1 link link-hover text-[#FFFFFF99] text-base font-medium">News & Article</a>
+                <a class="py-1 link link-hover text-[#FFFFFF99] text-base font-medium">Legal Notice</a>
             </nav> 
 
-            <nav>
+            <nav class="grid grid-cols-1">
                 <header class="footer-title text-[18px] text-white font-bold">Support</header> 
-              <a class="link link-hover text-[#FFFFFF99] text-base font-medium">Help Center</a>
-              <a class="link link-hover text-[#FFFFFF99] text-base font-medium">FAQ</a>
-              <a class="link link-hover text-[#FFFFFF99] text-base font-medium">Ticket Support</a>
-              <a class="link link-hover text-[#FFFFFF99] text-base font-medium">Ticket Support</a>
+              <a class="py-1 link link-hover text-[#FFFFFF99] text-base font-medium">Help Center</a>
+              <a class="py-1 link link-hover text-[#FFFFFF99] text-base font-medium">FAQ</a>
+              <a class="py-1 link link-hover text-[#FFFFFF99] text-base font-medium">Ticket Support</a>
+              <a class="py-1 link link-hover text-[#FFFFFF99] text-base font-medium">Ticket Support</a>
             </nav>
+        </div>
         
-            <nav>
+            <nav class="grid lg:grid-cols-1 mx-auto">
               <header class="footer-title text-[18px] text-white font-bold">Services</header> 
               <a class="link link-hover text-[#FFFFFF99] text-base font-medium">Academy</a>
               <a class="link link-hover text-[#FFFFFF99] text-base font-medium">Group Lesson</a>
