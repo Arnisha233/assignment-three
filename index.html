@@ -14,12 +14,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/e7cc2c11e6.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <!-- navbar section start -->
-        <nav class="container mx-auto mt-8">
+        <nav class="container mt-6 lg:mt-8 mx-auto">
             <div class="navbar bg-base-100 flex justify-between gap-[2.438rem]">
                 <div class="navbar-start w-full lg:w-[20%]">
                     <div class="dropdown order-1 lg:hidden w-1/2 flex justify-end">
@@ -305,7 +312,42 @@
         </section>
         <!-- project section end -->
     </main>
-    <footer></footer>
+    <footer>
+        <!-- footer section start -->
+        <section class=" bg-[#1C1C1C]  py-12 lg:pt-20">
+            <div class="lg:w-[70%] mx-auto">
+                <div class="mt-[0.976rem] text-center">
+                    <a class="text-[1.42rem] font-extrabold text-[#E9E9E9] w-[90%] text-center"><i
+                            class="fa-solid fa-arrow-right p-2 bg-[#ABEF5F] text-[#000] rounded-3xl -rotate-45 mr-2"></i>View
+                        Details</a>
+                    <p class="text-[0.71rem] font-medium text-[#737373] lg:w-[75%] mx-auto mt-3 mb-[mt-[2.13rerem]">
+                        The barn house
+                        captivates
+                        with its
+                        blend of
+                        rustic charm and
+                        modern sophistication, featuring
+                        weathered wood, sleek metal accents.</p>
+                </div>
+                <div class="my-8">
+                    <ul
+                        class="grid grid-cols-1 items-center text-center gap-6 lg:gap-12 lg:grid-cols-5 sw-[90%] mx-auto lg:w-full">
+                        <li class="text-[#E9E9E9] text-[0.71rem] font-extrabold"><a href="">Home</a></li>
+                        <li class="text-[0.71rem] text-[#E9E9E9] font-normal"><a href="">Services</a></li>
+                        <li class="text-[0.71rem] text-[#E9E9E9] font-normal"><a href="">Portfolio</a></li>
+                        <li class="text-[0.71rem] text-[#E9E9E9] font-normal"><a href="">Blogs</a></li>
+                        <li class="text-[0.71rem] text-[#E9E9E9] font-normal"><a href="">Contact Us</a></li>
+                    </ul>
+                    <div
+                        class="lg:w-[30%] mt-[2.13rem] mx-auto w-[90%] bg-[#ABEF5F] px-4 py-2 rounded-[1.42rem] text-center">
+                        <a class="w-full">Book Consult <i
+                                class="fa-solid fa-arrow-right p-2 bg-[#1C1C1C] text-[#fff] rounded-3xl -rotate-45 ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer section end -->
+    </footer>
 </body>
 
 </html>
